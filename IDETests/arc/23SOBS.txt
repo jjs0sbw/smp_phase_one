@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="file:///Users/jjs0sbw/Desktop/DT_One/Projects/SMP_Total/SMP_ATSPO/atspo_7/ntc_1" />
+<title>23SOBS.txt</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">23SOBS.txt</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>file:///Users/jjs0sbw/Desktop/DT_One/Projects/SMP_Total/smp_bt/smp_n1/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=matrix-size</td>
+	<td> 23</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-infer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-infer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-infer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-infer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-infer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>7</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>7</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-infer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>8</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-infer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>8</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-infer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>8</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>9</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-infer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>9</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-infer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-infer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>11</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>11</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-infer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>9</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-infer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>9</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=column-number</td>
+	<td>9</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.enter-data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Element out of range, please enter valid element.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Matrix row, to return, is out of range, please enter valid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrix row.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Matrix row, to return, is out of range, please enter valid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrix row.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Matrix row, to replace, is out of range, please enter valid row.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Matrix row, to replace, is out of range, please enter valid row.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=row-number</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enter-swap</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Element out of range, please enter valid element.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Matrix row, to return, is out of range, please enter valid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrix row.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Matrix row, to return, is out of range, please enter valid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;matrix row.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Matrix row, to replace, is out of range, please enter valid row.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Matrix row, to replace, is out of range, please enter valid row.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Matrix column, to return, is out of range, please enter valid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;column .</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

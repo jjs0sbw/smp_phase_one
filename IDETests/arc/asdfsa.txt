@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="asd.txt">asd</a></td></tr>
+<tr><td><a href="allSame.txt">allSame</a></td></tr>
+<tr><td><a href="asdf.txt">asdf</a></td></tr>
+<tr><td><a href="adf.txt">adf</a></td></tr>
+<tr><td><a href="tc_n1_t2">tc_n1_t2</a></td></tr>
+<tr><td><a href="123rde.txt">123rde</a></td></tr>
+<tr><td><a href="adf.txt">adf</a></td></tr>
+<tr><td><a href="asd1f.txt">moreTestStuff.txt</a></td></tr>
+<tr><td><a href="mts11.txt">mtStuff1.txt</a></td></tr>
+<tr><td><a href="mnts2.txt">mnts2.txt</a></td></tr>
+</tbody></table>
+</body>
+</html>

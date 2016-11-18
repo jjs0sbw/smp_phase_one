@@ -1,0 +1,64 @@
+body {
+	padding-top: 10px;
+	background-color: lightblue;
+}
+
+.structural_modeling_grid {
+	padding: 20px 15px;
+	text-align: center;
+}
+
+.menu_bar {
+	padding: 25px 25px;
+	text-align: left;
+	background-color: lightblue;
+
+}
+
+#n1-app,
+.n1-app {
+  margin-left: 15px
+  background-color: f5f5f5
+}
+
+#initButton {
+    margin-left: 5px
+}
+
+#SMP {
+	  float:left;
+    border: 2px solid black;
+    background-color: lightblue;
+}
+
+#zcan {
+    border: 2px solid black;
+    background-color: lightblue;
+
+}
+
+
+
+
+#main {
+	width: 798px;
+	margin:0;
+	background-color: lightblue;
+
+}
+
+#header {
+	width: 798px;
+	height:60px;
+	margin: auto;
+	background-color: lightblue;
+}
+
+
+
+#display {
+	float:left;
+	width:50%;
+	height:100%;
+	background-color: lightblue;
+}

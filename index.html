@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Structural Modeling And Abstract Relation Types: The ART of systems science and engineering">
+  <meta name="author" content="Joseph J. Simpson">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>SM GSM Application</title>
+  <link href="js/lib/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+  <link href="js/lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet"/>
+  <link href="css/general_structural_modeling_grid.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://systemsconcept.org/">Structural Modeling Project</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="doc/about/about.html">About</a></li>
+          <li><a href="doc/documents/documents.html">Documents</a><li>
+          <li><a href="doc/license/license.html">License</a></li>
+          <li><a href="doc/contact/contact.html">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+
+<div id="n1-app" class="n1-app">
+  <ul class="structure-list"></ul>
+
+  <div id='structure-select' class="structure-select">
+    <div id='main-heading'>
+      <h2>Please Select The Appropriate Approach.</h2>
+    </div>
+    <div id='structure-one'>
+      <h3>Strict Order - One Object Per Class [Manual]</h3>
+      <b>Enter Inital Matrix Size</b><br />
+      <label>Size: <input id="matrix-size-one" type="text" placeholder=" "></label>
+      <button id='create-one' class="create-one">Display One</button>
+      <a href='doc/documents/SMP_SO_OOPC_man.pdf'>Get Detailed Information</a>
+    </div>
+    <div id='structure-one-auto'>
+      <h3>Strict Order - One Object Per Class [Auto]</h3>
+      <b>Enter Inital Matrix Size</b><br />
+      <label>Size: <input id="matrix-size-one-auto" type="text" placeholder=" "></label>
+      <button id='create-one-auto' class="create-one-auto">Display One</button>
+      <a href='doc/documents/SMP_SO_OOPC_auto.pdf'>Get Detailed Information</a>
+    </div>
+    <div id='structure-many'>
+      <h3>Strict Order - One Or More Objects Per Class [Manual]</h3>
+      <b>Enter Inital Matrix Size</b><br />
+      <label>Size: <input id="matrix-size-many" type="text" placeholder=" "></label>
+      <button id='create-many' class="create-many">Display One Or More</button>
+      <a href='doc/documents/SMP_SO_OOMOPC_man.pdf'>Get Detailed Information</a>
+    </div>
+    <div id='structure-many-auto'>
+      <h3>Strict Order - One Or More Objects Per Class [Auto]</h3>
+      <b>Enter Inital Matrix Size</b><br />
+      <label>Size: <input id="matrix-size-many-auto" type="text" placeholder=" "></label>
+      <button id='create-many-auto' class="create-many-auto">Display One Or More</button>
+      <a href='doc/documents/SMP_SO_OOMOPC_auto.pdf'>Get Detailed Information</a>
+    </div>
+    <div id='structure-cluster'>
+      <h3>Cluster Objects Into Classes [Manual]</h3>
+      <b>Enter Inital Matrix Size</b><br />
+      <label>Size: <input id="matrix-size-cluster" type="text" placeholder=" "></label>
+      <button id='create-cluster' class="create-cluster">Display Cluster</button>
+      <a href='doc/documents/SMP_COIC_man.pdf'>Get Detailed Information</a>
+    </div>
+    <div id='structure-cluster-auto'>
+      <h3>Cluster Objects Into Classes [Auto]</h3>
+      <b>Enter Inital Matrix Size</b><br />
+      <label>Size: <input id="matrix-size-cluster-auto" type="text" placeholder=" "></label>
+      <button id='create-cluster-auto' class="create-cluster-auto">Display Cluster</button>
+      <a href='doc/documents/SMP_COIC_auto.pdf'>Get Detailed Information</a>
+    </div>
+    <br><br>
+  </div>
+</div>
+
+<script type="text/template" id="structure-item-tmpl">
+  <p><a href="/structures/<%= id %>"><%= size %></a></p>
+  <button class="remove">x</button>
+  <p> Add structure create code below </p>
+  <div id='structure-create' class="structure-create">
+    <b>Enter Inital Matrix Size</b><br />
+    <label>Size: <input id="matrix-size" type="text"></label>
+    <button class="create">Create Matrix</button>
+  </div>
+
+</script>
+
+<script type="text/template" id="structure-strict-one-tmpl">
+  <input id='matrix-size-one' type="hidden" value= <%= n1.size %>> <img src="img/colorLegend.png" height='84' width='354'> Initial Matrix Size is <%= n1.size %>
+  <h1>Strict Order - One Object Per Class [Manual]</h1>
+  <label>Enter Column Number: <input id='column-number' type='text' size='3'></label>
+  <label>Enter Row Number: <input id='row-number' type='text' size='3'></label>
+  <button class='enter-data'>Enter Data</button>
+  <button id='enter-swap' class='enter-swap'>Swap Entries</button>
+  <button id='enter-infer' class='enter-infer'>Infer Information</button>
+  <div id='display'>
+    <canvas id='canvas-left-side' width='20' height='320'></canvas>
+    <canvas id='canvas-main' width='320' height='320'></canvas>
+    <canvas id='canvas-bottom' width='320' height='20'></canvas>
+    <canvas id='canvas-vector' width='320' height='20'></canvas>
+  </div>
+</script>
+
+<script type="text/template" id="structure-strict-one-auto-tmpl">
+  <input id='matrix-size-one-auto' type="hidden" value= <%= n1.size %>> <img src="img/colorLegend.png" height='84' width='354'> Initial Matrix Size is <%= n1.size %>
+  <h1>Strict Order - One Object Per Class [Auto]</h1>
+  <label>Enter Column Number: <input id='column-number' type='text' size='3'></label>
+  <label>Enter Row Number: <input id='row-number' type='text' size='3'></label>
+  <button class='enter-data'>Enter Data</button>
+  <!-- <button id='enter-swap' class='enter-swap'>Swap Entries</button> -->
+  <button id='enter-infer' class='enter-infer'>Infer Information</button>
+  <div id='display'>
+    <canvas id='canvas-left-side' width='20' height='320'></canvas>
+    <canvas id='canvas-main' width='320' height='320'></canvas>
+    <canvas id='canvas-bottom' width='320' height='20'></canvas>
+    <canvas id='canvas-vector' width='320' height='20'></canvas>
+  </div>
+</script>
+
+<script type="text/template" id="structure-strict-many-tmpl">
+  <input id='matrix-size-many' type="hidden" value= <%= n1.size %>> <img src="img/colorLegend.png" height='84' width='354'> Initial Matrix Size is <%= n1.size %>
+  <h1>Strict Order - One Or More Objects Per Class [Manual]</h1>
+  <input id='matrix-size-many' type="hidden" value= <%= n1.size %>>
+  <label>Entries Equal?: <input id='entries-equal' type='text' size='1' value='N'></label>
+  <label>Enter Column Number: <input id='column-number' type='text' size='3'></label>
+  <label>Enter Row Number: <input id='row-number' type='text' size='3'></label>
+  <button class='enter-data'>Enter Data</button>
+  <button id='enter-swap' class='enter-swap'>Swap Entries</button>
+  <button id='enter-infer' class='enter-infer'>Infer Information</button>
+  <br /> <br />
+  <div id='display'>
+    <canvas id='canvas-left-side' width='20' height='320'></canvas>
+    <canvas id='canvas-main' width='320' height='320'></canvas>
+    <canvas id='canvas-bottom' width='320' height='20'></canvas>
+    <canvas id='canvas-vector' width='320' height='20'></canvas>
+  </div>
+</script>
+
+<script type="text/template" id="structure-strict-many-auto-tmpl">
+  <input id='matrix-size-many-auto' type="hidden" value= <%= n1.size %>> <img src="img/colorLegend.png" height='84' width='354'> Initial Matrix Size is <%= n1.size %>
+  <h1>Strict Order - One Or More Objects Per Class [Auto]</h1>
+  <input id='matrix-size-many-auto' type="hidden" value= <%= n1.size %>>
+  <label>Entries Equal?: <input id='entries-equal' type='text' size='1' value='N'></label>
+  <label>Enter Column Number: <input id='column-number' type='text' size='3'></label>
+  <label>Enter Row Number: <input id='row-number' type='text' size='3'></label>
+  <button class='enter-data'>Enter Data</button>
+  <!--<button id='enter-swap' class='enter-swap'>Swap Entries</button> -->
+  <button id='enter-infer' class='enter-infer'>Infer Information</button>
+  <br /> <br />
+  <div id='display'>
+    <canvas id='canvas-left-side' width='20' height='320'></canvas>
+    <canvas id='canvas-main' width='320' height='320'></canvas>
+    <canvas id='canvas-bottom' width='320' height='20'></canvas>
+    <canvas id='canvas-vector' width='320' height='20'></canvas>
+  </div>
+</script>
+
+<script type="text/template" id="structure-cluster-tmpl">
+  <input id='matrix-size-cluster' type="hidden" value= <%= n1.size %>> <img src="img/colorLegend.png" height='84' width='354'> Initial Matrix Size is <%= n1.size %>
+  <h1>Clusters Of Equivalent Objects [Manual]</h1>
+  <input id='matrix-size-cluster' type="hidden" value= <%= n1.size %>>
+  <label>Enter Column Number: <input id='column-number' type='text' size='3'></label>
+  <label>Enter Row Number: <input id='row-number' type='text' size='3'></label>
+  <button class='enter-data'>Enter Data</button> <br />
+  <div id='display'>
+    <canvas id='canvas-left-side' width='20' height='320'></canvas>
+    <canvas id='canvas-main' width='320' height='320'></canvas>
+    <canvas id='canvas-bottom' width='320' height='20'></canvas>
+    <h5>Clusters listed below: one per row</h5>
+    <canvas id='canvas-vector' width='320' height='20'></canvas>
+  </div>
+</script>
+
+<script type="text/template" id="structure-cluster-auto-tmpl">
+  <input id='matrix-size-cluster-auto' type="hidden" value= <%= n1.size %>> <img src="img/colorLegend.png" height='84' width='354'> Initial Matrix Size is <%= n1.size %>
+  <h1>Clusters Of Equivalent Objects [Auto]</h1>
+  <input id='matrix-size-cluster-auto' type="hidden" value= <%= n1.size %>>
+  <label>Enter Column Number: <input id='column-number' type='text' size='3'></label>
+  <label>Enter Row Number: <input id='row-number' type='text' size='3'></label>
+  <button class='enter-data'>Enter Data</button> <br />
+  <div id='display'>
+    <canvas id='canvas-left-side' width='20' height='320'></canvas>
+    <canvas id='canvas-main' width='320' height='320'></canvas>
+    <canvas id='canvas-bottom' width='320' height='20'></canvas>
+    <h5>Clusters listed below: one per row</h5>
+    <canvas id='canvas-vector' width='320' height='20'></canvas>
+  </div>
+</script>
+
+<script type="text/template" id="structure-general-tmpl">
+  <h1>General Structural Modeling Approach</h1>
+  <p>Place proper interface elements here.</h>
+</script>
+
+
+
+<script type='text/template' id='structure-input-tmpl'>
+  <h1>General Modeling Grid </h1>
+  <p>Initial Matrix Size Is: <%= n1.size %></p>
+  <label>Entries Equal?: <input id='entries-equal' type='text' size='1' value='N'></label>
+  <label>Enter Column Number: <input id='column-number' type='text' size='3'></label>
+  <label>Enter Row Number: <input id='row-number' type='text' size='3'></label>
+  <button class='enter-data'>Enter Data</button>
+  <br /> <br />
+  <button id='enter-swap' class='enter-swap'>Swap Entries</button>
+  <button id='enter-infer' class='enter-infer'>Infer Information</button>
+  <br /> <br />
+  <div id='display'>
+    <canvas id='canvas-left-side' width='20' height='320'></canvas>
+    <canvas id='canvas-main' width='320' height='320'></canvas>
+    <canvas id='canvas-bottom' width='320' height='20'></canvas>
+    <canvas id='canvas-vector' width='320' height='20'></canvas>
+  </div>
+
+</script>
+
+<!-- External scripts -->
+<script src='js/lib/jquery.js'></script>
+<script src='js/lib/bootstrap/js/bootstrap.min.js'></script>
+<script src='js/lib/underscore.js'></script>
+<script src='js/lib/backbone.js'></script>
+<script src='js/lib/backbone.localStorage.js'></script>
+<script src='js/n1/namespace.js'></script>
+<script src='js/n1/config.js'></script>
+<script src='js/n1/mathlib/binaryVector.js'></script>
+<script src='js/n1/mathlib/binaryMatrix.js'></script>
+<script src='js/n1/mathlib/gridTools.js'></script>
+<script src='js/n1/models/structure.js'></script>
+<script src='js/n1/collections/structureList.js'></script>
+<!-- <script src='js/n1/views/structuresInitialView.js'></script>
+<script src='js/n1/views/structuresInputView.js'></script> -->
+<script src='js/n1/views/structuresSelectView.js'></script>
+<script src='js/n1/views/StructuresStrictOrderOneView.js'></script>
+<script src='js/n1/views/StructuresStrictOrderOneAutoView.js'></script>
+<script src='js/n1/views/StructuresStrictOrderManyView.js'></script>
+<script src='js/n1/views/StructuresStrictOrderManyAutoView.js'></script>
+<script src='js/n1/views/StructuresClusterCreationView.js'></script>
+<script src='js/n1/views/StructuresClusterCreationAutoView.js'></script>
+
+
+
+
+
+
+<script src="js/n1/n1.js"></script>
+
+</body>
+</html>
